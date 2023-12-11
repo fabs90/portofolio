@@ -1,0 +1,57 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#arrow {
+  animation: 2s upDown infinite;
+}
+
+a#link_gundar {
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+a#link_gundar:hover {
+  height: 2px;
+  border-radius: 3px;
+  transform: translateY(-2px);
+  text-decoration: underline;
+}
+
+.skillz-label {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+ul.language-skills {
+  list-style: none;
+  /* Ketengahin skills, ul nya jadi gapunya padding */
+  padding: 0;
+  margin: 0;
+}
+
+ul.framework-skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.tools-skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
