@@ -59,6 +59,19 @@ ul.tools-skills {
   margin: 0;
 }
 
+li {
+  display: block;
+  margin: 10px 3px 3px 0;
+  font-family: Inconsolata, monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 8px;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 2px 2px black;
+}
+
 span.emoji {
   margin-left: 10px;
   width: 20px;
@@ -85,4 +98,71 @@ span.emoji {
 
 .animated {
   animation: wave 2s infinite; /* Adjust the duration as needed */
+}
+
+.projects_used_item {
+  display: inline-block;
+  margin: 3px 3px 3px 0;
+  font-family: Inconsolata, monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 8px;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 2px 2px black;
+}
+
+.projects_used_item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.contact-left {
+  font-weight: bold;
+  text-align: left;
+  word-spacing: 0.1cap;
+}
+
+.contact-right a {
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* .contact-right a:hover {
+  text-decoration: underline black;
+  text-decoration-thickness: 3px;
+} */
+
+/* CSS untuk animasi text-decoration underline */
+a {
+  text-decoration: none;
+  position: relative;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Atur tinggi garis underline */
+  bottom: 0;
+  left: 0;
+  background-color: black; /* Atur warna underline sesuai kebutuhan */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.contact-right-item {
+  margin-right: 5%;
 }
