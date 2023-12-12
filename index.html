@@ -25,7 +25,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="bg-body-tertiary">
     <!-- Navbar -->
     <section id="navbar">
       <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary pt-4">
@@ -36,7 +36,7 @@
             width="30"
             height="30"
           />
-          <a class="navbar-brand fw-semibold text-center" href="#">Fabian</a>
+          <a class="navbar-brand fw-semibold ms-xl-0 ms-xxl-0 ms-lg-0 ms-5" href="#">Fabian</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -66,27 +66,26 @@
         <div class="container-fluid align-items-center">
           <div class="row align-items-center">
             <!-- Tambahkan class align-items-center di sini -->
-            <div class="col-md-7 fs-4">
-              <h4 class="fw-semibold">Hi, I'm Developer</h4>
+            <div class="col-md-7 fs-4 col-12">
+              <h4 class="fw-semibold">Hi, I'm Developer <span class="emoji wave-hand animated" style="background-image: url('assets/handwave-emoji.png');"></span></h4>
               <h1 class="display-5 fw-bold">Fabian Juliansyah Cahyadi</h1>
               <p class="fw-light">Come take a look at my projects</p>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 col-12">
               <img
                 src="assets/dev-to-svgrepo-com.svg"
                 class="img-fluid align-self-start"
                 alt="img"
               />
             </div>
-          </div>
-          <div
-            class="arrow align-items-center w-100 d-flex flex-column mt-5"
+            <div
+            class="arrow align-items-center w-100 d-flex flex-column"
             id="arrow"
           >
             <a href="#about" class="text-decoration-none text-dark"
               >More Info</a
             >
-            <svg
+            <a href="#about" class="text-decoration-none text-dark">    <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
               height="32"
@@ -97,8 +96,11 @@
               <path
                 d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
               />
-            </svg>
+            </svg></a>
+        
           </div>
+          </div>
+       
         </div>
       </div>
     </section>
@@ -127,11 +129,9 @@
                 ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
                 deleniti.
               </p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
-                sequi autem, mollitia quod ut quaerat. Aliquam eligendi ipsum
-                laudantium quae.
-              </p>
+              <p>My motto is 
+                <q>Tidak ada kata terlambat</p>
+                </q>
             </div>
           </div>
         </div>
@@ -189,6 +189,74 @@
       </div>
     </section>
     <!-- End Skills -->
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div
+              class="col-12 skills-title d-flex flex-column justify-content-center align-items-center"
+            >
+              <h1 class="fw-bold">Projects📂</h1>
+            </div>
+            <div class="col-12">
+                <div  class="row">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="project-image"><img src="assets/laptop1-removebg-preview.png" class="img-fluid" alt="project-1"></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="project-description mt-4 ">
+                            <h4>Admin Dashboard</h4>
+                            <p>Manage the content displayed on landing page using CRUD and monitoring the system</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div  class="row">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="project-image"><img src="assets/laptop2.png" class="img-fluid" alt="project-2"></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="project-description mt-4 ">
+                            <h4>Landing Page</h4>
+                            <p>Features a design that reflects the brand identity and values of the company, creates a positive impression on visitors, and strengthens the brand image</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div  class="row">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="project-image"><img src="assets/laptop3.png" class="img-fluid" alt="project-3"></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="project-description mt-4 ">
+                            <h4>Design the UI</h4>
+                            <p>Created UI by paying attention to aspects and feedback from the target market of the application, especially the elderly</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div  class="row">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="project-image"><img src="assets/laptop4.png" class="img-fluid" alt="project-4"></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="project-description mt-4 ">
+                            <h4>Personal Blog</h4>
+                            <p>Created blog with admin page, every post have timestamp and their categories</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects -->
 
     <script src="main.js"></script>
     <!-- Bootstrap 5 js -->
