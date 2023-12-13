@@ -68,7 +68,7 @@
           <div class="row align-items-center">
             <!-- Tambahkan class align-items-center di sini -->
             <div class="col-md-7 fs-4 col-12">
-              <h4 class="fw-semibold">Hi, I'm Developer <span class="emoji wave-hand animated" style="background-image: url('assets/handwave-emoji.png');"></span></h4>
+              <h4 class="fw-semibold">Hi, I'm a Developer <span class="emoji wave-hand animated" style="background-image: url('assets/handwave-emoji.png');"></span></h4>
               <h1 class="display-5 fw-bold">Fabian Juliansyah Cahyadi</h1>
               <p class="fw-light">Come take a look at my projects</p>
             </div>
@@ -146,41 +146,42 @@
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div
-              class="skills-title d-flex flex-column justify-content-center align-items-center"
+              class="col-12 skills-title d-flex flex-column justify-content-center align-items-center"
             >
               <h1 class="fw-bold">Skills🛠️</h1>
             </div>
-            <div class="skillz mt-1 py-3 d-flex justify-content-center">
-              <div class="skillz-category text-center me-5">
-                <div class="skillz-label mb-2">Languages</div>
+            <div class="col-12 row skillz mt-1 py-3">
+              <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 skillz-category text-center mb-3 mb-md-0 mb-lg-0 mb-xl-0 mb-xxl-0">
+                <div class="skillz-label">Programming Languages
+                </div>
                 <div>
                   <ul class="language-skills">
-                    <li class="language-skills-item">Javascript</li>
-                    <li class="language-skills-item">PHP</li>
-                    <li class="language-skills-item">SQL</li>
-                    <li class="language-skills-item">Dart</li>
-                    <li class="language-skills-item">Kotlin</li>
+                    <li><span class="skills_used_item">Javascript</span></li>
+                    <li><span class="skills_used_item">PHP</span></li>
+                    <li><span class="skills_used_item">SQL</span></li>
+                    <li><span class="skills_used_item">Dart</span></li>
+                    <li><span class="skills_used_item">Kotlin</span></li>
                   </ul>
                 </div>
               </div>
-              <div class="skillz-category text-center me-5">
-                <div class="skillz-label  mb-2">Framework</div>
+              <div class="col-12  col-md-4 col-lg-4 col-xl-4 col-xxl-4 skillz-category text-center mb-3 mb-md-0 mb-lg-0 mb-xl-0 mb-xxl-0">
+                <div class="skillz-label">Frameworks</div>
                 <div>
                   <ul class="framework-skills">
-                    <li class="framework-skills-item">Bootstrap</li>
-                    <li class="framework-skills-item">Laravel</li>
-                    <li class="framework-skills-item">Flutter</li>
+                    <li><span class="skills_used_item">Bootstrap</span></li>
+                    <li><span class="skills_used_item">Flutter</span></li>
+                    <li><span class="skills_used_item">Laravel</span></li>
                   </ul>
                 </div>
               </div>
-              <div class="tools-category text-center">
-                <div class="skillz-label  mb-2">Tools</div>
+              <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 tools-category text-center mb-md-0 mb-lg-0 mb-xl-0 mb-xxl-0">
+                <div class="skillz-label">Tools</div>
                 <div>
                   <ul class="tools-skills">
-                    <li class="tools-skills-item">Postman</li>
-                    <li class="tools-skills-item">DBeaver</li>
-                    <li class="tools-skills-item">Figma</li>
-                    <li class="tools-skills-item">Canva</li>
+                    <li><span class="skills_used_item">Canva</span></li>
+                    <li><span class="skills_used_item">DBeaver</span></li>
+                    <li><span class="skills_used_item">Figma</span></li>
+                    <li><span class="skills_used_item">Postman</span></li>
                   </ul>
                 </div>
               </div>
@@ -190,6 +191,12 @@
       </div>
     </section>
     <!-- End Skills -->
+
+  <!-- The Modal to zoom image -->
+  <div id="myModal" class="modal">
+    <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
 
     <!-- Projects -->
     <section id="projects">
@@ -204,12 +211,13 @@
             <div class="col-12 reveal">
                 <div  class="row">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="project-image"><img src="assets/laptop1-removebg-preview.png" class="img-fluid" alt="project-1"></div>
+                        <div class="project-image"><img id="myImg" src="assets/laptop1-removebg-preview.png" class="img-fluid" alt="project-1"></div>
                     </div>
+                  
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="project-description mt-4 ">
                             <h4>Admin Dashboard</h4>
-                            <p>Manage the content displayed on landing page using CRUD and monitoring the system</p>
+                            <p>Managed the content displayed on landing page using CRUD and monitoring the system</p>
                             <div class="mt-2 projects_used d-flex flex-row flex-wrap mb-3 mb-lg-0 mb-sm-0 mb-md-0 mb-xl-0 mb-xxl-0">
                               <span  class="projects_used_item">Bootstrap</span>
                               <span  class="projects_used_item">Javascript</span>
@@ -223,12 +231,12 @@
             <div class="col-12 reveal">
                 <div  class="row">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="project-image"><img src="assets/laptop2.png" class="img-fluid" alt="project-2"></div>
+                        <div class="project-image"><img id="myImg1" src="assets/laptop2.png" class="img-fluid" alt="project-2"></div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="project-description mt-4 ">
                             <h4>Landing Page</h4>
-                            <p>Features a design that reflects the brand identity and values of the company, creates a positive impression on visitors, and strengthens the brand image</p>
+                            <p>Created landing page to promoted products.</p>
                             <div class="mt-2 projects_used d-flex flex-row flex-wrap mb-3 mb-lg-0 mb-sm-0 mb-md-0 mb-xl-0 mb-xxl-0">
                               <span  class="projects_used_item">Bootstrap</span>
                               <span  class="projects_used_item">Javascript</span>
@@ -242,12 +250,12 @@
             <div class="col-12 reveal">
                 <div  class="row">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="project-image"><img src="assets/laptop3.png" class="img-fluid" alt="project-3"></div>
+                        <div class="project-image"><img id="myImg2" src="assets/laptop3.png" class="img-fluid" alt="project-3"></div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="project-description mt-4 ">
-                            <h4>Design the UI</h4>
-                            <p>Created UI by paying attention to aspects and feedback from the target market of the application, especially the elderly</p>
+                            <h4>User Interface</h4>
+                            <p>Created UI by paying attention to aspects and feedbacks given by from the target market of the application itself which, mainly are the elders</p>
                             <div class="mt-2 projects_used d-flex flex-row flex-wrap mb-3 mb-lg-0 mb-sm-0 mb-md-0 mb-xl-0 mb-xxl-0">
                               <span  class="projects_used_item">Figma</span>
                              
@@ -259,12 +267,12 @@
             <div class="col-12 reveal">
                 <div  class="row">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="project-image"><img src="assets/laptop4.png" class="img-fluid" alt="project-4"></div>
+                        <div class="project-image"><img id="myImg3" src="assets/laptop4.png" class="img-fluid" alt="project-4"></div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="mt-2 projects_used d-flex flex-row flex-wrap mb-3 mb-lg-0 mb-sm-0 mb-md-0 mb-xl-0 mb-xxl-0">
                             <h4>Personal Blog</h4>
-                            <p>Created blog with admin page, every post have timestamp and their categories</p>
+                            <p>Created blog that are featured with timestamp on each post, category menu, and an admin page of its own</p>
                             <div class="mt-2 projects_used d-flex flex-row flex-wrap mb-3 mb-lg-0 mb-sm-0 mb-md-0 mb-xl-0 mb-xxl-0">
                               <span  class="projects_used_item">Bootstrap</span>
                               <span  class="projects_used_item">Laravel</span>
@@ -279,12 +287,12 @@
             <div class="col-12 reveal">
                 <div  class="row">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="project-image"><img src="assets/elco-project.png" class="img-fluid" alt="project-4"></div>
+                        <div class="project-image"><img id="myImg4" src="assets/elco-project.png" class="img-fluid" alt="project-4"></div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="mt-2 projects_used d-flex flex-row flex-wrap mb-3 mb-lg-0 mb-sm-0 mb-md-0 mb-xl-0 mb-xxl-0">
                             <h4>Android Application</h4>
-                            <p>Collaborated with my team to build the application. This app purposes for PKM project</p>
+                            <p>Collaborated with my team to build an application in purpose of assigning to PKM project</p>
                             <div class="mt-2 projects_used d-flex flex-row flex-wrap mb-3 mb-lg-0 mb-sm-0 mb-md-0 mb-xl-0 mb-xxl-0">
                               <span  class="projects_used_item">Dart</span>
                               <span  class="projects_used_item">Flutter</span>
@@ -306,10 +314,10 @@
       <div class="container ">
         <div class="row">
           <div class="contact-left col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-4 text-center text-sm-start text-md-start text-lg-start text-xl-start text-xxl-start">
-            <div class="top-contact-left">Design & Developed by</div>
+            <div class="top-contact-left">Designed & Developed by</div>
             <div class="bottom-contact-left">Fabian 😺 2023</div>
           </div>
-          <div class="contact-right col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8 text-center  text-sm-end text-md-end text-lg-end text-xl-end text-xxl-end">
+          <div class="contact-right mb-3 mb-sm-0 mb-md-0 mb-lg-0 mb-xl-0 mb-xxl-0 col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8 text-center  text-sm-end text-md-end text-lg-end text-xl-end text-xxl-end">
             <a href="mailto:fabianjuliansyah89@gmail.com" target="_blank" class="contact-right-item email mt-3 mt-lg-0 ">Email</a>
             <a href="https://github.com/fabs90" target="_blank" class="contact-right-item github  mt-3 mt-lg-0 ">Github</a>
             <a href="https://instagram.com/fabianjc.jpeg" target="_blank" class="contact-right-item instagram mt-3 mt-lg-0 ">Instagram</a>
