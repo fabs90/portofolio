@@ -14,6 +14,11 @@ function reveal() {
   }
 }
 
+<<<<<<< HEAD
+=======
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+>>>>>>> fb231d7 (Test 2nd)
 window.addEventListener("scroll", reveal);
 
 // To check the scroll position on page load
@@ -29,7 +34,11 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function () {
   modal.style.display = "block";
+<<<<<<< HEAD
   modalImg.src = "assets/projects-1-full.png";
+=======
+  modalImg.src = "assets/project-admin-full.png";
+>>>>>>> fb231d7 (Test 2nd)
   modalImg.alt = this.alt;
   captionText.innerHTML = this.alt;
 };
@@ -48,7 +57,11 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function () {
   modal.style.display = "block";
+<<<<<<< HEAD
   modalImg.src = "assets/projects-2-full.png";
+=======
+  modalImg.src = "assets/project-landing-full.png";
+>>>>>>> fb231d7 (Test 2nd)
   modalImg.alt = this.alt;
   captionText.innerHTML = this.alt;
 };
@@ -67,7 +80,11 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function () {
   modal.style.display = "block";
+<<<<<<< HEAD
   modalImg.src = "assets/projects-3-full.png";
+=======
+  modalImg.src = "assets/project-uiux-full.png";
+>>>>>>> fb231d7 (Test 2nd)
   modalImg.alt = this.alt;
   captionText.innerHTML = this.alt;
 };
@@ -86,7 +103,11 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function () {
   modal.style.display = "block";
+<<<<<<< HEAD
   modalImg.src = "assets/projects-4-full.png";
+=======
+  modalImg.src = "assets/project-web-full.png";
+>>>>>>> fb231d7 (Test 2nd)
   modalImg.alt = this.alt;
   captionText.innerHTML = this.alt;
 };
@@ -105,7 +126,11 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function () {
   modal.style.display = "block";
+<<<<<<< HEAD
   modalImg.src = "assets/projects-5-full.jpeg";
+=======
+  modalImg.src = "assets/project-android-full.png";
+>>>>>>> fb231d7 (Test 2nd)
   modalImg.alt = this.alt;
   captionText.innerHTML = this.alt;
 };
@@ -118,3 +143,34 @@ modal.onclick = function () {
     img01.className = "modal-content";
   }, 400);
 };
+<<<<<<< HEAD
+=======
+var img = document.getElementById("myImg5");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function () {
+  modal.style.display = "block";
+  modalImg.src = "assets/certificate-bangkit.jpg";
+  modalImg.alt = this.alt;
+  captionText.innerHTML = this.alt;
+};
+
+// When the user clicks on <span> (x), close the modal
+modal.onclick = function () {
+  img01.className += " out";
+  setTimeout(function () {
+    modal.style.display = "none";
+    img01.className = "modal-content";
+  }, 400);
+};
+var img = document.getElementById("myImg6");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function () {
+  modal.style.display = "block";
+  modalImg.src = "assets/certificate-laravel.jpg";
+  modalImg.alt = this.alt;
+  captionText.innerHTML = this.alt;
+};
+
+>>>>>>> fb231d7 (Test 2nd)
