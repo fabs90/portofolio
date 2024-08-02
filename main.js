@@ -138,12 +138,23 @@ modal.onclick = function () {
     img01.className = "modal-content";
   }, 400);
 };
+
 var img = document.getElementById("myImg6");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function () {
   modal.style.display = "block";
   modalImg.src = "assets/certificate-laravel.jpg";
+  modalImg.alt = this.alt;
+  captionText.innerHTML = this.alt;
+};
+
+var img = document.getElementById("myImg7");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function () {
+  modal.style.display = "block";
+  modalImg.src = "assets/certificate-git.jpg";
   modalImg.alt = this.alt;
   captionText.innerHTML = this.alt;
 };
